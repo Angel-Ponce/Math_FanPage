@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@mixin center {
+    align-items: center;
+    justify-content: center;
+}
+.tiraSup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: rgb(22, 21, 21);
+}
+
+.back{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 5%;
+    transition: 0.6s;
+    &:hover{
+        background-color: whitesmoke;
+        color: black;
+    }
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    @include center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+.content{
+    display: flex;
+    align-items: top;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+}
+
+.text{
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    flex-direction: column;
+    color: black;
+    width: 50%;
+    height: auto;
+    text-align: justify;
+}
+
+#imgRef{
+    width: 50%;
+    height: auto;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
